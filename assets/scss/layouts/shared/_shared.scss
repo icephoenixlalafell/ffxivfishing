@@ -1,0 +1,145 @@
+main {
+  margin: 0;
+  padding: rem-calc(10);
+  background-color: $white;
+  color: $body-font-color;
+
+  @media screen and (min-width: 700px) {
+    margin: 0 rem-calc(20);
+    padding: rem-calc(20);
+  }
+  
+  &.no-padding {
+    padding: 0;
+  }
+}
+
+.dark main {
+  background-color: $dark-component-background-color;
+  color: $white;
+}
+
+.wrapper {
+  padding: rem-calc(5);
+  margin: 0;
+
+  @media screen and (min-width: 700px) {
+    padding: rem-calc(20);
+    margin: rem-calc(5) rem-calc(20);
+  }
+  
+  &.no-padding {
+    padding: 0;
+  }
+}
+
+.default-bg {
+  background-color: $white;
+}
+
+.dark .default-bg {
+  background-color: $dark-component-background-color;
+}
+
+header .timer {
+  margin: auto 0;
+  font-size: rem-calc(10);
+
+  @media screen and (min-width: 1024px) {
+    font-size: rem-calc(20);
+  }
+}
+
+
+nav ul {
+  display: flex;
+  margin: 0;
+
+  justify-items: center;    
+  list-style-type: none;
+  
+  li {
+    display: flex;
+    align-items: center;
+    padding: 0;
+
+    span {
+      padding: 0 0.2rem;
+    }
+
+    a {
+      padding: 1rem 0.5rem;
+      margin-right: 0.1rem;    
+
+      background-color: $nav-background-color;
+    }
+  }
+}
+
+.dark nav ul li a {
+  background-color: $nav-dark-background-color;
+}
+
+.filters {
+  & + div {
+    margin-top: 20px;
+  }
+
+  .filterGroup {
+    display: flex;
+    &.mainFilter {
+      justify-content: space-between;
+    }
+    &.routeFilter {
+      justify-content: center;
+      button {
+        min-width: rem-calc(200);
+      }
+    }
+    &.locationFilter {
+      flex-wrap: wrap;
+      justify-content: center;
+      button {
+        min-width: rem-calc(260);
+        margin: 5px 0;
+      }
+    }
+  }
+
+  .filter {
+    margin-bottom: 10px;
+
+    button {
+      background-color: $white;
+      color: $filter-color;
+      font-size: rem-calc(10);
+
+      @media screen and (min-width: 700px) {
+        font-size: rem-calc(16);        
+      }
+      
+
+      &.filter-on {
+        background-color: $filter-color;
+        color: $white;
+      }
+    }
+  }
+
+  
+}
+
+.dark .filters {
+  .filter {
+    button {
+      background-color: $dark-filter-color;
+      color: $white;
+
+      &.filter-on {
+        background-color: $white;
+        color: $dark-filter-color;
+      }
+    }
+  }
+  
+}

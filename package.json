@@ -1,0 +1,34 @@
+{
+  "dependencies": {
+    "@octokit/core": "^4.0.5",
+    "consola": "*",
+    "eorzea-time": "^2.0.0",
+    "netlify-cli": "^2.69.6",
+    "nuxt": "^2.13.2",
+    "sass": "^1.54.5",
+    "sass-loader": "^10.1.1",
+    "vue": "2",
+    "vue-js-toggle-button": "^1.3.3"
+  },
+  "name": "ffxivfishing",
+  "version": "1.5.0",
+  "description": "FFXIV Fishing Tool",
+  "main": "index.js",
+  "repository": "git@github.com:juz501/ffxivfishing.git",
+  "author": "Ice Phoenix <icephoenixlalafell@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "nuxt generate",
+    "dev": "nuxt",
+    "netlify": "netlify",
+    "pushlfs": "git lfs push --all origin",
+    "lint": "eslint --ext .js,.vue ."
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@babel/eslint-parser": "^7.18.9",
+    "eslint": "^7.15.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "webpack": "5"
+  }
+}

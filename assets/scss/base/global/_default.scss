@@ -1,0 +1,21 @@
+* {
+  box-sizing: content-box;
+}
+
+body {
+  background-color: $default-background-color;
+  font-size: rem-calc($body-font-size-mobile-px);
+
+  @media screen and (min-width: 1024px) {
+    font-size: rem-calc($body-font-size-px);
+  }
+  &.dark {
+    background-color: $dark-background-color;
+    color: $white;
+  }
+}
+
+ul {
+  list-style-type: disc;
+  margin: rem-calc(5) rem-calc(25);
+}

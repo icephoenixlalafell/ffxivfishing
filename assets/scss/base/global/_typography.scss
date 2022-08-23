@@ -1,0 +1,110 @@
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: $heading-font-family;
+  line-height: 1.5;
+}
+
+h1,
+.h1 {
+  color: $heading-color;
+  font-weight: 700;
+  font-size: rem-calc(16);
+
+  @media screen and (min-width: 700px) {
+    font-size: rem-calc(40);
+  }
+}
+
+.dark h1,
+.dark .h1 {
+  color: $white;
+}
+
+h2,
+.h2 {
+  font-weight: 400;
+  font-size: rem-calc(14);
+
+  @media screen and (min-width: 700px) {
+    font-size: rem-calc(30);
+  }
+}
+
+h3,
+.h3 {
+  font-weight: 400;
+  font-size: rem-calc(12);
+
+  @media screen and (min-width: 700px) {
+    font-size: rem-calc(20);
+  }
+}
+
+body {
+  font-family: $body-font-family;
+}
+
+a {
+  color: $heading-color;
+  font-family: $body-font-family;
+  text-decoration: none;
+  
+  &:hover {
+    color: $hover-color;    
+  }
+}
+
+.dark a {
+  color: $white;
+
+  &:hover {
+    color: $white;
+    text-decoration: underline;
+  }
+}
+
+strong {
+  font-weight: 700;
+  color: $bold-color;
+}
+
+.dark strong {
+  color: $dark-bold-color;
+}
+
+em {
+  font-style: italic;
+}
+
+p {
+  line-height: 1.2;
+  padding-bottom: 0.5rem;
+}
+
+.strat,
+.double-hook {
+  em {
+    color: $fish-color;
+    font-weight: bold;
+  }
+}
+
+.dark {
+  .strat,
+  .double-hook {
+    em {
+      color: $dark-fish-color;
+      font-weight: normal;
+    }
+  }
+}

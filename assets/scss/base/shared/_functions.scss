@@ -1,0 +1,4 @@
+@function rem-calc($size) {
+  $remSize: calc($size / $body-font-size-px);
+  @return #{$remSize}rem;
+}
