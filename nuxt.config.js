@@ -1,5 +1,13 @@
 export default {
   build: {
+    loaders: {
+      sass: {
+        implementation: require('sass')
+      },
+      scss: {
+        implementation: require('sass')
+      }
+    },
     vendor: ['eorzea-time', 'vuex'],
   },
   head: {
